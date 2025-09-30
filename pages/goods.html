@@ -4,35 +4,37 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Семестровая работа</title>
+        <link rel="stylesheet" href="../style/styles.css">
     </head>
     <body>
-        <div id="header">Хэдер</div>
-        <div id="menu">
-            <ul>
-                <li><a href="../index.html">Главная</a></li>
-                <li><a href="news.html">Новости</a></li>
-                <li><a href="practices.html">Практики</a></li> 
-                <li><a href="goods.html">Товары</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
-            </ul>
+        <div class="page-container">
+            <div class="header">Хэдер</div>
+            <div class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
+                    <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li> 
+                    <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+        <div class="tovars-content">
+            <div class="tovars-card">
+                <img class="img-card" src="../images/tovar_1.jpg" alt="Фото товара 2">
+                <h2 class="tovar-title">Фуражка полицейская.</h2>
+                <h2 class="price-title">Цена: 1499₽</h2>
+            </div>
+            <div class="tovars-card">
+                <img class="img-card" src="../images/tovar_2.jpg" alt="Фото товара 2">
+                <h2 class="tovar-title">Ничотко.</h2>
+                <h2 class="price-title">Цена: 5999₽</h2>
+            </div>
+            <div class="tovars-card">
+                <img class="img-card" src="../images/tovar_3.jpg" alt="Фото товара 3">
+                <h2 class="tovar-title">BMW M5 F10.</h2>
+                <h2 class="price-title">Цена: 4500000₽</h2>
+            </div>
         </div>
-        <div id="tovars">
-            <div class="tovars-card">
-                <img scr="../images/tovar_1.jpg" alt="Фото товара 1" width="200" height="250">
-                <h2>Товар 1</h2>
-                <h2>Цена: 1500</h2>
-            </div>
-            <div class="tovars-card">
-                <img scr="../images/tovar_2.jpg" alt="Фото товара 2" width="200" height="250">
-                <h2>Товар 2</h2>
-                <h2>Цена: 6000</h2>
-            </div>
-            <div class="tovars-card">
-                <img scr="../images/tovar_3.jpg" alt="Фото товара 3" width="200" height="250">
-                <h2>Товар 3</h2>
-                <h2>Цена: 10</h2>
-            </div>
-        </div>
-        <div id="footer">Футер</div> 
+        <div class="footer">Футер</div> 
     </body>
 </html>
