@@ -1,48 +1,70 @@
 <!DOCTYPE html>
 <html lang = "ru">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Семестровая работа</title>
-        <link rel="stylesheet" href="../style/styles.css">
-    </head>
-    <body>
-        <div class="page-container">
-            <header class="header">
-                <h1>Хэдер</h1>
-            </header>
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
-                    <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
-                    <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li> 
-                    <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
-                </ul>
-            </nav>
-            <div class="tovars-container">
-                <h2 class="zagolovok">Товары</h2>
-                <div class="products-grid">
-                    <article class="tovars-card">
-                        <img class="img-card" src="../images/tovar_1.jpg" alt="Фото товара 2">
-                        <h2 class="tovar-title">Фуражка полицейская.</h2>
-                        <h2 class="price-title">Цена: 1499₽</h2>
-                    </article>
-                    <article class="tovars-card">
-                        <img class="img-card" src="../images/tovar_2.jpg" alt="Фото товара 2">
-                        <h2 class="tovar-title">Ничотко.</h2>
-                        <h2 class="price-title">Цена: 5999₽</h2>
-                    </article>
-                    <article class="tovars-card">
-                        <img class="img-card" src="../images/tovar_3.jpg" alt="Фото товара 3">
-                        <h2 class="tovar-title">BMW M5 F10.</h2>
-                        <h2 class="price-title">Цена: 4500000₽</h2>
-                    </article>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Товары</title>
+    <link rel="stylesheet" href="../style/styles.css">
+</head>
+<body>
+    
+    <!-- Основной котейнер-->
+    <div class="page">
+
+        <!-- Шапка-->
+        <header class="header">
+            <h1 class="head_title">Товары</h1>
+        </header>
+        
+        
+        <!--Навигация-->
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a class="nav__link" href="../index.html">Главная</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="news.html">Новости</a>
+                </li> 
+                <li class="nav__item nav__item--active">
+                    <a class="nav__link" href="goods.html">Товары</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="contacts.html">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Основной контент-->
+        <main class="main">
+        
+            <!-- Блок товаров-->
+            
+            <section class="products">
+                <h2 class="products__title">Товары</h2>
+                <div class="products__list">
+                    <div class="products-item">
+                        <img class="products-item__img" src="../images/tovar_1.jpg" alt="Фото товара 2">
+                        <h2 class="products-item__title">Фуражка полицейская.</h2>
+                        <h2 class="products-item__price">Цена: 1499₽</h2>
+                    </div>
+                    <div class="products-item">
+                        <img class="products-item__img" src="../images/tovar_2.jpg" alt="Фото товара 2">
+                        <h2 class="products-item__title">Ничотко.</h2>
+                        <h2 class="products-item__price">Цена: 5999₽</h2>
+                    </div>
+                    <div class="products-item">
+                        <img class="products-item__img" src="../images/tovar_3.jpg" alt="Фото товара 3">
+                        <h2 class="products-item__title">BMW M5 F10.</h2>
+                        <h2 class="products-item__price">Цена: 4500000₽</h2>
+                    </div>
                 </div>
-            </div>
-            <footer class="footer">
-                <p>© 2024 Все права защищены. Контактная информация</p>
-            </footer>
-        </div>
-    </body>
+            </section>
+        </main>
+        <!-- Подвал -->
+        <footer class="footer">
+            <p class="footer__text">&copy; 2024 Мой сайт</p>
+        </footer> 
+    </div>
+</body>
 </html>
