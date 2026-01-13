@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - StudentDev Portfolio</title>
+    <link rel="stylesheet" href="../style/styles.css">
+</head>
+<body>
+    <div class="page">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header__content">
+                    <h1 class="header__title">Асаков Вячеслав</h1>
+                    <p class="header__subtitle">Студент-разработчик</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="nav">
+            <div class="container">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="../index.html" class="nav__link">Главная</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="projects.html" class="nav__link">Проекты</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="diary.html" class="nav__link">Дневник</a>
+                    </li>
+                    <li class="nav__item nav__item--active">
+                        <a href="contacts.html" class="nav__link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main -->
+        <main class="main">
+            <div class="container">
+                <section class="contacts__content">
+                    <!-- Contact Form -->
+                    <div class="contact-form">
+                        <h2 class="section-title">Свяжитесь со мной</h2>
+                        <form class="form" id="contactForm" novalidate>
+                            <div class="form__group">
+                                <label for="name" class="form__label">Имя</label>
+                                <input type="text" id="name" name="name" class="form__input" placeholder="Введите ваше имя" required>
+                            </div>
+                            <div class="form__group">
+                                <label for="email" class="form__label">Email</label>
+                                <input type="email" id="email" name="email" class="form__input" placeholder="example@mail.ru" required>
+                            </div>
+                            <div class="form__group">
+                                <label for="message" class="form__label">Сообщение</label>
+                                <textarea id="message" name="message" class="form__textarea" placeholder="Введите ваше сообщение..." required></textarea>
+                            </div>
+                            <button type="submit" class="button button--primary form__button">Отправить</button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="contact-info">
+                        <h2 class="contact-info__title">Контактная информация</h2>
+                        <div class="contact-info__items">
+                            <div class="contact-item">
+                                <div class="contact-item__icon">📧</div>
+                                <div class="contact-item__content">
+                                    <div class="contact-item__title">Email</div>
+                                    <div class="contact-item__value">
+                                        <a href="mailto:student@edu.ru"></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-item__icon">💼</div>
+                                <div class="contact-item__content">
+                                    <div class="contact-item__title">GitHub</div>
+                                    <div class="contact-item__value">
+                                        <a href="https://github.com/NE4EL" target="_blank"></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-item__icon">📍</div>
+                                <div class="contact-item__content">
+                                    <div class="contact-item__title">Местоположение</div>
+                                    <div class="contact-item__value">Москва, Россия</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <p class="footer__copyright">&copy; 2025 StudentDev Portfolio</p>
+                    <div class="footer__links">
+                        <a href="mailto:student@edu.ru" class="footer__link">Email</a>
+                        <a href="https://github.com/NE4EL" class="footer__link" target="_blank">GitHub</a>
+                        <a href="https://linkedin.com" class="footer__link" target="_blank">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            if (!name || !email || !message) {
+                alert('Пожалуйста, заполните все поля.');
+                return;
+            }
+
+            if (!email.includes('@')) {
+                alert('Введите корректный email.');
+                return;
+            }
+
+            alert('Спасибо! Ваше сообщение успешно отправлено.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
